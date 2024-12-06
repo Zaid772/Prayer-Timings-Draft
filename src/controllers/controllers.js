@@ -4,7 +4,7 @@ async function registerUser (req, res) {
     try {
         await User.create({
             name: req.body.name,
-            email: req.body.password,
+            email: req.body.email,
             password: req.body.password
         });
         
@@ -18,3 +18,5 @@ async function registerUser (req, res) {
         });
     };
 };
+
+module.exports = registerUser;

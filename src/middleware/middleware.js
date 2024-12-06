@@ -18,4 +18,4 @@ async function hashPassword (req, res, next) {
     };
 };
 
-hashPassword()
+module.exports = hashPassword;
